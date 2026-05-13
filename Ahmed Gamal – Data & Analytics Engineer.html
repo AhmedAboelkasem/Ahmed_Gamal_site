@@ -1,0 +1,900 @@
+<!DOCTYPE html>
+<!-- saved from url=(0043)file:///D:/DATA/CV/Portfolio/Ahmed Gamal – Data & Analytics Engineer.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ahmed Gamal AboElkasem — Data &amp; Analytics Engineer">
+<title>Ahmed Gamal – Data &amp; Analytics Engineer</title>
+<link href="./Ahmed Gamal – Data &amp; Analytics Engineer_files/css2" rel="stylesheet">
+
+<!-- === variables.css === -->
+<style>
+:root {
+  --blue-deep:   #042C53;
+  --blue-strong: #185FA5;
+  --blue-mid:    #378ADD;
+  --blue-light:  #85B7EB;
+  --blue-pale:   #B5D4F4;
+  --blue-ghost:  #E6F1FB;
+  --white:       #ffffff;
+  --off-white:   #f7fafd;
+  --text-dark:   #0a1f33;
+  --text-muted:  #4a6580;
+  --border:      rgba(55,138,221,0.15);
+  --font-display:'Playfair Display', serif;
+  --font-heading:'Syne', sans-serif;
+  --font-body:   'DM Sans', sans-serif;
+  --space-sm:  1rem;
+  --space-md:  1.5rem;
+  --space-lg:  2.5rem;
+  --space-xl:  4rem;
+  --space-2xl: 6rem;
+  --radius-sm:  8px;
+  --radius-md:  14px;
+  --radius-lg:  16px;
+  --radius-xl:  20px;
+  --radius-pill:100px;
+  --shadow-card:  0 4px 20px rgba(24,95,165,0.08);
+  --shadow-hover: 0 10px 36px rgba(24,95,165,0.16);
+  --shadow-btn:   0 4px 20px rgba(24,95,165,0.25);
+  --shadow-btn-h: 0 8px 28px rgba(24,95,165,0.38);
+  --t-fast: 0.2s ease;
+  --t-med:  0.35s ease;
+}
+*,*::before,*::after{margin:0;padding:0;box-sizing:border-box;}
+html{scroll-behavior:smooth;font-size:16px;}
+body{font-family:var(--font-body);background:var(--white);color:var(--text-dark);overflow-x:hidden;line-height:1.6;}
+img{display:block;max-width:100%;}
+a{color:inherit;}
+ul{list-style:none;}
+</style>
+
+<!-- === layout.css === -->
+<style>
+section{padding:var(--space-2xl) var(--space-xl);}
+section:nth-child(even){background:var(--off-white);}
+
+.section-tag{
+  display:inline-block;
+  font-family:var(--font-heading);font-size:0.72rem;font-weight:600;
+  text-transform:uppercase;letter-spacing:1.4px;
+  color:var(--blue-strong);background:var(--blue-ghost);
+  border:1px solid var(--blue-pale);
+  padding:4px 14px;border-radius:var(--radius-pill);margin-bottom:0.7rem;
+}
+.section-title{
+  font-family:var(--font-display);
+  font-size:clamp(1.8rem,3vw,2.5rem);font-weight:700;
+  color:var(--blue-deep);letter-spacing:-0.5px;
+  margin-bottom:var(--space-lg);line-height:1.15;
+}
+.section-title span{color:var(--blue-mid);}
+
+.btn-primary{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:0.75rem 1.9rem;
+  background:var(--blue-strong);color:var(--white);
+  border-radius:var(--radius-sm);text-decoration:none;
+  font-family:var(--font-heading);font-weight:600;font-size:0.88rem;
+  border:none;cursor:pointer;
+  transition:background var(--t-fast),transform var(--t-fast),box-shadow var(--t-fast);
+  box-shadow:var(--shadow-btn);
+}
+.btn-primary:hover{background:var(--blue-deep);transform:translateY(-2px);box-shadow:var(--shadow-btn-h);}
+.btn-outline{
+  display:inline-flex;align-items:center;gap:6px;
+  padding:0.75rem 1.9rem;
+  border:1.5px solid var(--blue-mid);color:var(--blue-strong);
+  border-radius:var(--radius-sm);text-decoration:none;
+  font-family:var(--font-heading);font-weight:600;font-size:0.88rem;
+  background:transparent;cursor:pointer;
+  transition:background var(--t-fast),transform var(--t-fast);
+}
+.btn-outline:hover{background:var(--blue-ghost);transform:translateY(-2px);}
+
+@keyframes slideDown{from{opacity:0;transform:translateY(-100%);}to{opacity:1;transform:translateY(0);}}
+@keyframes fadeUp{from{opacity:0;transform:translateY(28px);}to{opacity:1;transform:translateY(0);}}
+@keyframes float{0%,100%{transform:translateY(0) scale(1);}50%{transform:translateY(-28px) scale(1.03);}}
+@keyframes pulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:0.45;transform:scale(1.45);}}
+
+.reveal{opacity:0;transform:translateY(22px);transition:opacity .55s ease,transform .55s ease;}
+.reveal.visible{opacity:1;transform:translateY(0);}
+.reveal-left{opacity:0;transform:translateX(-22px);transition:opacity .55s ease,transform .55s ease;}
+.reveal-left.visible{opacity:1;transform:translateX(0);}
+
+@media(max-width:768px){
+  section{padding:3.5rem 1.4rem;}
+  .section-title{font-size:1.7rem;}
+}
+</style>
+
+<!-- === nav.css === -->
+<style>
+.nav{
+  position:fixed;top:0;left:0;right:0;z-index:200;
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0.9rem var(--space-xl);
+  background:rgba(255,255,255,0.88);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border-bottom:1px solid var(--border);
+  animation:slideDown .6s ease both;
+  transition:box-shadow var(--t-fast);
+}
+.nav.scrolled{box-shadow:0 2px 20px rgba(4,44,83,0.08);}
+.nav__logo{
+  font-family:var(--font-display);font-size:1.15rem;font-weight:800;
+  color:var(--blue-deep);letter-spacing:-0.3px;text-decoration:none;
+}
+.nav__links{display:flex;gap:2rem;list-style:none;}
+.nav__links a{
+  text-decoration:none;font-family:var(--font-heading);
+  font-size:0.85rem;font-weight:500;color:var(--text-muted);
+  letter-spacing:0.3px;position:relative;padding-bottom:3px;
+  transition:color var(--t-fast);
+}
+.nav__links a::after{
+  content:'';position:absolute;bottom:0;left:0;
+  width:0;height:2px;background:var(--blue-mid);
+  border-radius:2px;transition:width var(--t-fast);
+}
+.nav__links a:hover{color:var(--blue-strong);}
+.nav__links a:hover::after,.nav__links a.active::after{width:100%;}
+.nav__links a.active{color:var(--blue-strong);}
+.nav__hamburger{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px;}
+.nav__hamburger span{display:block;width:22px;height:2px;background:var(--blue-deep);border-radius:2px;transition:transform var(--t-fast),opacity var(--t-fast);}
+.nav__drawer{display:none;position:fixed;top:56px;left:0;right:0;background:var(--white);border-bottom:1px solid var(--border);padding:1.2rem var(--space-xl);flex-direction:column;gap:1.2rem;z-index:199;animation:fadeUp .25s ease both;}
+.nav__drawer.open{display:flex;}
+.nav__drawer a{font-family:var(--font-heading);font-size:1rem;font-weight:600;color:var(--blue-deep);text-decoration:none;}
+@media(max-width:768px){
+  .nav{padding:0.9rem 1.4rem;}
+  .nav__links,.nav__cta{display:none;}
+  .nav__hamburger{display:flex;}
+}
+</style>
+
+<!-- === hero.css === -->
+<style>
+.hero{
+  min-height:100vh;display:flex;align-items:center;
+  background:linear-gradient(158deg,var(--blue-ghost) 0%,var(--white) 52%,var(--off-white) 100%);
+  padding:8rem var(--space-xl) 4rem;
+  position:relative;overflow:hidden;
+}
+.hero__blob{position:absolute;border-radius:50%;background:var(--blue-pale);opacity:0.22;filter:blur(65px);pointer-events:none;will-change:transform;}
+.hero__blob--1{width:520px;height:520px;top:-130px;right:-110px;animation:float 8s ease-in-out infinite;}
+.hero__blob--2{width:320px;height:320px;bottom:50px;left:-90px;animation:float 12s ease-in-out infinite reverse;}
+.hero__blob--3{width:180px;height:180px;top:40%;right:30%;opacity:0.12;animation:float 15s ease-in-out infinite 3s;}
+.hero__content{position:relative;z-index:1;max-width:680px;}
+.hero__badge{
+  display:inline-flex;align-items:center;gap:8px;
+  background:var(--blue-ghost);color:var(--blue-strong);
+  border:1px solid var(--blue-pale);
+  font-family:var(--font-heading);font-size:0.74rem;font-weight:600;
+  letter-spacing:1px;text-transform:uppercase;
+  padding:6px 16px;border-radius:var(--radius-pill);margin-bottom:1.4rem;
+  animation:fadeUp .8s .15s both;
+}
+.hero__badge-dot{width:7px;height:7px;border-radius:50%;background:var(--blue-mid);animation:pulse 2.2s infinite;flex-shrink:0;}
+.hero__name{
+  font-family:var(--font-display);
+  font-size:clamp(2.4rem,5.5vw,4.2rem);font-weight:800;line-height:1.08;
+  color:var(--blue-deep);letter-spacing:-1.5px;margin-bottom:0.45rem;
+  animation:fadeUp .8s .3s both;
+}
+.hero__role{font-family:var(--font-heading);font-size:clamp(1.2rem,2.8vw,1.85rem);font-weight:600;color:var(--blue-mid);margin-bottom:1.4rem;animation:fadeUp .8s .42s both;}
+.hero__desc{font-size:1rem;line-height:1.85;color:var(--text-muted);max-width:540px;margin-bottom:2.2rem;animation:fadeUp .8s .54s both;}
+.hero__ctas{display:flex;gap:var(--space-sm);flex-wrap:wrap;animation:fadeUp .8s .66s both;}
+.hero__stats{position:absolute;right:var(--space-xl);bottom:3rem;display:flex;gap:2.2rem;animation:fadeUp .9s .8s both;}
+.hero__stat{text-align:center;position:relative;}
+.hero__stat+.hero__stat::before{content:'';position:absolute;left:-1.1rem;top:50%;transform:translateY(-50%);width:1px;height:36px;background:var(--blue-pale);}
+.hero__stat-num{font-family:var(--font-display);font-size:2.1rem;font-weight:800;color:var(--blue-deep);line-height:1;}
+.hero__stat-label{font-size:0.74rem;color:var(--text-muted);margin-top:5px;letter-spacing:0.3px;}
+@media(max-width:768px){
+  .hero{padding:7rem 1.4rem 9rem;}
+  .hero__stats{right:1.4rem;bottom:2rem;gap:1.4rem;}
+  .hero__stat-num{font-size:1.5rem;}
+}
+</style>
+
+<!-- === sections.css === -->
+<style>
+/* TIMELINE */
+.timeline{position:relative;}
+.timeline::before{content:'';position:absolute;left:18px;top:8px;bottom:8px;width:2px;background:linear-gradient(to bottom,var(--blue-mid),var(--blue-pale));border-radius:2px;}
+.exp-item{display:flex;gap:2rem;margin-bottom:2.4rem;padding-left:3rem;position:relative;}
+.exp-item__dot{position:absolute;left:10px;top:10px;width:18px;height:18px;border-radius:50%;background:var(--blue-strong);border:3px solid var(--white);box-shadow:0 0 0 2.5px var(--blue-mid);flex-shrink:0;transition:transform var(--t-fast),background var(--t-fast);}
+.exp-item:hover .exp-item__dot{background:var(--blue-deep);transform:scale(1.15);}
+.exp-item__card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.5rem 1.8rem;flex:1;transition:box-shadow var(--t-fast),transform var(--t-fast);}
+.exp-item__card:hover{box-shadow:var(--shadow-hover);transform:translateY(-3px);}
+.exp-item__company{font-family:var(--font-heading);font-size:1.12rem;font-weight:700;color:var(--blue-deep);}
+.exp-item__role{font-size:0.92rem;color:var(--blue-strong);font-weight:500;margin:5px 0 3px;}
+.exp-item__period{display:inline-block;font-size:0.74rem;font-weight:500;color:var(--blue-mid);background:var(--blue-ghost);padding:3px 11px;border-radius:var(--radius-pill);margin-bottom:1rem;}
+.exp-item__bullets li{font-size:0.88rem;color:var(--text-muted);line-height:1.72;padding-left:1.3rem;position:relative;margin-bottom:3px;}
+.exp-item__bullets li::before{content:'→';position:absolute;left:0;color:var(--blue-mid);}
+
+/* EDUCATION */
+.edu-card{display:flex;gap:1.6rem;align-items:flex-start;background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.8rem 2rem;max-width:680px;transition:box-shadow var(--t-fast),transform var(--t-fast);}
+.edu-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-3px);}
+.edu-card__icon{width:58px;height:58px;flex-shrink:0;border-radius:var(--radius-md);background:var(--blue-ghost);border:1px solid var(--blue-pale);display:flex;align-items:center;justify-content:center;font-size:1.8rem;}
+.edu-card__degree{font-family:var(--font-display);font-size:1.1rem;font-weight:700;color:var(--blue-deep);margin-bottom:4px;}
+.edu-card__school{font-family:var(--font-heading);font-size:0.98rem;color:var(--blue-strong);font-weight:600;}
+.edu-card__dept{font-size:0.86rem;color:var(--text-muted);margin-top:4px;}
+.edu-card__period{display:inline-block;font-size:0.74rem;font-weight:500;color:var(--blue-mid);background:var(--blue-ghost);padding:3px 11px;border-radius:var(--radius-pill);margin-top:10px;}
+
+/* SKILLS */
+.skills-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1.2rem;}
+.skill-category{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-md);padding:1.4rem;transition:box-shadow var(--t-fast),transform var(--t-fast);}
+.skill-category:hover{box-shadow:var(--shadow-card);transform:translateY(-2px);}
+.skill-category__title{font-family:var(--font-display);font-size:0.92rem;font-weight:700;color:var(--blue-strong);margin-bottom:1rem;display:flex;align-items:center;gap:9px;}
+.skill-category__title::before{content:'';width:22px;height:3px;border-radius:2px;background:var(--blue-mid);display:block;flex-shrink:0;}
+.skill-tags{display:flex;flex-wrap:wrap;gap:7px;}
+.skill-tag{background:var(--blue-ghost);color:var(--blue-strong);font-size:0.78rem;font-weight:500;padding:5px 13px;border-radius:var(--radius-pill);border:1px solid var(--blue-pale);cursor:default;transition:background var(--t-fast),transform var(--t-fast);}
+.skill-tag:hover{background:var(--blue-pale);transform:scale(1.05);}
+</style>
+
+<!-- === components.css === -->
+<style>
+/* CERT CARDS */
+.certs-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;}
+.cert-card{background:var(--white);border:1px solid var(--border);border-radius:var(--radius-lg);padding:1.4rem;display:flex;flex-direction:column;transition:box-shadow var(--t-fast),transform var(--t-fast);}
+.cert-card:hover{box-shadow:var(--shadow-hover);transform:translateY(-4px);}
+.cert-card__header{display:flex;align-items:center;gap:1rem;margin-bottom:1rem;}
+.cert-card__badge{width:68px;height:68px;flex-shrink:0;border-radius:var(--radius-md);overflow:hidden;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:transform var(--t-fast);}
+.cert-card__badge:hover{transform:scale(1.07);}
+.cert-card__badge img{width:100%;height:100%;object-fit:contain;}
+.cert-card__badge--photo{background:var(--off-white);}
+.cert-card__badge--ms{background:#f3f3f3;padding:10px;}
+.cert-card__badge--emoji{background:var(--blue-ghost);border:1px solid var(--blue-pale);font-size:2rem;border-radius:var(--radius-md);}
+.cert-card__issuer{font-family:var(--font-heading);font-size:0.72rem;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:0.7px;}
+.cert-card__name{font-family:var(--font-display);font-size:0.92rem;font-weight:700;color:var(--blue-deep);line-height:1.35;margin-top:4px;}
+.cert-card__year{font-size:0.76rem;color:var(--blue-mid);font-weight:500;margin-top:5px;}
+.cert-card__actions{margin-top:auto;padding-top:1rem;display:flex;gap:8px;align-items:center;flex-wrap:wrap;}
+.cert-card__upload-btn{display:inline-flex;align-items:center;gap:6px;padding:7px 13px;border-radius:var(--radius-sm);background:var(--blue-ghost);color:var(--blue-strong);font-size:0.78rem;font-weight:500;cursor:pointer;border:1px dashed var(--blue-light);transition:background var(--t-fast),border-style var(--t-fast);}
+.cert-card__upload-btn:hover{background:var(--blue-pale);border-style:solid;}
+.cert-card__upload-btn svg{width:13px;height:13px;flex-shrink:0;}
+.cert-card__file-input{display:none;}
+.cert-card__view-btn{display:none;align-items:center;gap:6px;padding:7px 13px;border-radius:var(--radius-sm);background:var(--blue-strong);color:var(--white);font-size:0.78rem;font-weight:500;cursor:pointer;border:none;text-decoration:none;transition:background var(--t-fast);}
+.cert-card__view-btn:hover{background:var(--blue-deep);}
+.cert-card__view-btn svg{width:13px;height:13px;}
+.cert-card__view-btn.active{display:inline-flex;}
+.cert-card__attached-label{display:none;font-size:0.73rem;color:#1aab7a;font-weight:600;}
+.cert-card__attached-label.active{display:inline;}
+
+/* CONTACT */
+#contact{background:var(--blue-deep);}
+#contact .section-tag{background:rgba(255,255,255,0.1);color:var(--blue-pale);border-color:rgba(255,255,255,0.15);}
+#contact .section-title{color:var(--white);}
+#contact .section-title span{color:var(--blue-light);}
+.contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;}
+.contact-item{display:flex;align-items:flex-start;gap:1rem;background:rgba(255,255,255,0.07);border:1px solid rgba(255,255,255,0.12);border-radius:var(--radius-md);padding:1.2rem 1.4rem;text-decoration:none;color:var(--white);transition:background var(--t-fast),transform var(--t-fast);}
+.contact-item:hover{background:rgba(255,255,255,0.13);transform:translateY(-2px);}
+.contact-item__icon{font-size:1.35rem;flex-shrink:0;padding-top:2px;opacity:0.75;}
+.contact-item__label{font-family:var(--font-heading);font-size:0.7rem;font-weight:600;color:var(--blue-pale);text-transform:uppercase;letter-spacing:0.7px;}
+.contact-item__value{font-size:0.87rem;font-weight:400;margin-top:3px;word-break:break-all;line-height:1.5;}
+
+/* FOOTER */
+.site-footer{background:#021c35;padding:1.8rem var(--space-xl);text-align:center;color:rgba(255,255,255,0.28);font-size:0.8rem;}
+
+/* MODALS */
+.modal-overlay{display:none;position:fixed;inset:0;z-index:999;background:rgba(4,44,83,0.72);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);align-items:center;justify-content:center;}
+.modal-overlay.active{display:flex;}
+.modal{background:var(--white);border-radius:var(--radius-xl);padding:2rem;max-width:90vw;max-height:90vh;overflow:auto;position:relative;animation:fadeUp .28s ease both;}
+.modal__close{position:absolute;top:1rem;right:1rem;width:34px;height:34px;background:var(--blue-ghost);border:none;border-radius:var(--radius-sm);cursor:pointer;font-size:1.1rem;color:var(--blue-strong);display:flex;align-items:center;justify-content:center;transition:background var(--t-fast);}
+.modal__close:hover{background:var(--blue-pale);}
+.modal img{max-width:70vw;max-height:80vh;border-radius:10px;display:block;}
+
+@media(max-width:768px){
+  .certs-grid{grid-template-columns:1fr;}
+  .contact-grid{grid-template-columns:1fr;}
+}
+</style>
+</head>
+<body>
+
+<nav class="nav scrolled">
+  <a href="file:///D:/DATA/CV/Portfolio/Ahmed Gamal – Data & Analytics Engineer.html#hero" class="nav__logo">Ahmed Gamal</a>
+  <ul class="nav__links">
+    <li><a href="file:///D:/DATA/CV/Portfolio/Ahmed Gamal – Data & Analytics Engineer.html#experience" class="">Experience</a></li>
+    <li><a href="file:///D:/DATA/CV/Portfolio/Ahmed Gamal – Data & Analytics Engineer.html#education" class="">Education</a></li>
+    <li><a href="file:///D:/DATA/CV/Portfolio/Ahmed Gamal – Data & Analytics Engineer.html#skills" class="">Skills</a></li>
+    <li><a href="file:///D:/DATA/CV/Portfolio/Ahmed Gamal – Data & Analytics Engineer.html#certifications" class="active">Certifications</a></li>
+    <li><a href="file:///D:/DATA/CV/Portfolio/Ahmed Gamal – Data & Analytics Engineer.html#contact">Contact</a></li>
+  </ul>
+  <a href="mailto:AhmedGamalAboelkasem72@gmail.com" class="btn-primary nav__cta" style="font-size:0.82rem;padding:0.55rem 1.3rem;">Hire me</a>
+  <button class="nav__hamburger" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+</nav>
+<nav class="nav__drawer">
+  <a href="file:///D:/DATA/CV/Portfolio/Ahmed Gamal – Data & Analytics Engineer.html#experience">Experience</a>
+  <a href="file:///D:/DATA/CV/Portfolio/Ahmed Gamal – Data & Analytics Engineer.html#education">Education</a>
+  <a href="file:///D:/DATA/CV/Portfolio/Ahmed Gamal – Data & Analytics Engineer.html#skills">Skills</a>
+  <a href="file:///D:/DATA/CV/Portfolio/Ahmed Gamal – Data & Analytics Engineer.html#certifications">Certifications</a>
+  <a href="file:///D:/DATA/CV/Portfolio/Ahmed Gamal – Data & Analytics Engineer.html#contact">Contact</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="hero">
+  <div class="hero__blob hero__blob--1"></div>
+  <div class="hero__blob hero__blob--2"></div>
+  <div class="hero__blob hero__blob--3"></div>
+  <div class="hero__content">
+    <div class="hero__badge"><span class="hero__badge-dot"></span>Available for new opportunities</div>
+    <h1 class="hero__name">Ahmed Gamal<br>AboElkasem</h1>
+    <p class="hero__role">Data &amp; Analytics Engineer</p>
+    <p class="hero__desc">Professional Data &amp; Analytics Engineer with strong expertise in Denodo data virtualization, end-to-end data lifecycle management, and designing modern scalable data architectures that drive real business value.</p>
+    <div class="hero__ctas">
+      <a href="file:///D:/DATA/CV/Portfolio/Ahmed Gamal – Data & Analytics Engineer.html#contact" class="btn-primary">Get in touch</a>
+      <a href="file:///D:/DATA/CV/Portfolio/Ahmed Gamal – Data & Analytics Engineer.html#certifications" class="btn-outline">View certifications</a>
+    </div>
+  </div>
+  <div class="hero__stats">
+    <div class="hero__stat"><div class="hero__stat-num">3+</div><div class="hero__stat-label">Years experience</div></div>
+    <div class="hero__stat"><div class="hero__stat-num">9</div><div class="hero__stat-label">Certifications</div></div>
+    <div class="hero__stat"><div class="hero__stat-num">2</div><div class="hero__stat-label">Countries</div></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <span class="section-tag">Career journey</span>
+  <h2 class="section-title">Work <span>Experience</span></h2>
+  <div class="timeline">
+    <article class="exp-item reveal-left visible" data-delay="0">
+      <div class="exp-item__dot"></div>
+      <div class="exp-item__card">
+        <h3 class="exp-item__company">Council of Health Insurance (CHI)</h3>
+        <p class="exp-item__role">Data Management and Denodo Developer</p>
+        <span class="exp-item__period">📍 Riyadh, Saudi Arabia &nbsp;·&nbsp; Dec 2024 – Present</span>
+        <ul class="exp-item__bullets">
+          <li>Manage and administer Denodo servers, ensuring high availability and performance.</li>
+          <li>Design unified data views by integrating diverse sources including Impala and Hive.</li>
+          <li>Develop and manage APIs via Denodo for seamless data delivery to consumers.</li>
+          <li>Prepare documentation for National Data Index (NDI) from SDAIA, improving compliance and data maturity.</li>
+          <li>Design and develop interactive Power BI dashboards for data-driven decision-making.</li>
+        </ul>
+      </div>
+    </article>
+    <article class="exp-item reveal-left visible" data-delay="130">
+      <div class="exp-item__dot"></div>
+      <div class="exp-item__card">
+        <h3 class="exp-item__company">IT-Bots</h3>
+        <p class="exp-item__role">Data and Analytics Engineer</p>
+        <span class="exp-item__period">📍 Cairo, Egypt &nbsp;·&nbsp; May 2023 – Dec 2024</span>
+        <ul class="exp-item__bullets">
+          <li>Developed and implemented virtual data models using Denodo.</li>
+          <li>Managed metadata via Denodo Data Catalog to enhance data discoverability.</li>
+          <li>Enforced data security and privacy controls using Denodo.</li>
+          <li>Created interactive Power BI dashboards enabling insights visualization.</li>
+          <li>Designed and deployed ETL processes loading data into a centralized data warehouse.</li>
+        </ul>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+  <span class="section-tag">Academic background</span>
+  <h2 class="section-title">My <span>Education</span></h2>
+  <article class="edu-card reveal visible" data-delay="0">
+    <div class="edu-card__icon">🎓</div>
+    <div>
+      <h3 class="edu-card__degree">Bachelor's Degree in Computer Science</h3>
+      <p class="edu-card__school">Assiut University</p>
+      <p class="edu-card__dept">Faculty of Computers and Information — Information Systems Department</p>
+      <span class="edu-card__period">📍 Assiut, Egypt &nbsp;·&nbsp; Graduated July 2021</span>
+    </div>
+  </article>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <span class="section-tag">What I work with</span>
+  <h2 class="section-title">Technical <span>Skills</span></h2>
+  <div class="skills-grid">
+    <div class="skill-category visible" data-delay="0"><h3 class="skill-category__title">Data Virtualization</h3><div class="skill-tags"><span class="skill-tag">Denodo</span><span class="skill-tag">Denodo AI SDK</span><span class="skill-tag">Denodo Data Catalog</span><span class="skill-tag">Virtual Data Models</span></div></div>
+    <div class="skill-category visible" data-delay="60"><h3 class="skill-category__title">Data Engineering</h3><div class="skill-tags"><span class="skill-tag">ETL Pipelines</span><span class="skill-tag">Data Warehouse Design</span><span class="skill-tag">Apache Airflow</span><span class="skill-tag">Microsoft Fabric</span></div></div>
+    <div class="skill-category visible" data-delay="120"><h3 class="skill-category__title">Databases &amp; Query</h3><div class="skill-tags"><span class="skill-tag">SQL</span><span class="skill-tag">T-SQL</span><span class="skill-tag">Impala</span><span class="skill-tag">Hive</span><span class="skill-tag">Database Development</span></div></div>
+    <div class="skill-category visible" data-delay="180"><h3 class="skill-category__title">Visualization &amp; BI</h3><div class="skill-tags"><span class="skill-tag">Power BI</span><span class="skill-tag">Interactive Dashboards</span><span class="skill-tag">Data Storytelling</span></div></div>
+    <div class="skill-category visible" data-delay="240"><h3 class="skill-category__title">Programming</h3><div class="skill-tags"><span class="skill-tag">Python</span><span class="skill-tag">Linux</span><span class="skill-tag">Shell Scripting</span></div></div>
+    <div class="skill-category visible" data-delay="300"><h3 class="skill-category__title">Data Governance</h3><div class="skill-tags"><span class="skill-tag">Data Management</span><span class="skill-tag">Data Security</span><span class="skill-tag">Statistics</span><span class="skill-tag">NDI / SDAIA</span><span class="skill-tag">CDMP</span></div></div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+
+  <span class="section-tag">Credentials</span>
+
+  <h2 class="section-title">
+    Licenses & <span>Certifications</span>
+  </h2>
+
+  <div class="certs-grid">
+
+    <!-- CDMP -->
+    <article class="cert-card visible">
+
+      <div class="cert-card__header">
+
+        <div class="cert-card__badge cert-card__badge--photo">
+          <img src="images/DAMA_LOGO.png" alt="CDMP badge">
+        </div>
+
+        <div>
+          <p class="cert-card__issuer">DAMA International</p>
+
+          <h3 class="cert-card__name">
+            Certified Data Management Professional (CDMP – Associate)
+          </h3>
+
+          <p class="cert-card__year">Active</p>
+        </div>
+
+      </div>
+
+      <div class="cert-card__actions">
+
+        <a class="cert-card__view-btn active"
+           href="images/CDMP.png"
+           target="_blank">
+
+          <svg viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2">
+
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+
+          </svg>
+
+          View
+        </a>
+
+      </div>
+
+    </article>
+
+    <!-- DP-600 -->
+    <article class="cert-card visible">
+
+      <div class="cert-card__header">
+
+        <div class="cert-card__badge cert-card__badge--photo">
+          <img src="images/microsoft_logo.jpg" alt="Microsoft badge">
+        </div>
+
+        <div>
+          <p class="cert-card__issuer">Microsoft</p>
+
+          <h3 class="cert-card__name">
+            Microsoft Certified: Fabric Analytics Engineer Associate (DP-600)
+          </h3>
+
+          <p class="cert-card__year">Active</p>
+        </div>
+
+      </div>
+
+      <div class="cert-card__actions">
+
+        <a class="cert-card__view-btn active"
+           href="images/dp600.png"
+           target="_blank">
+
+          <svg viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2">
+
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+
+          </svg>
+
+          View
+        </a>
+
+      </div>
+
+    </article>
+
+    <!-- Denodo Admin -->
+    <article class="cert-card visible">
+
+      <div class="cert-card__header">
+
+        <div class="cert-card__badge cert-card__badge--photo">
+          <img src="images/denodo_technologies_logo.jpg" alt="Denodo Admin">
+        </div>
+
+        <div>
+          <p class="cert-card__issuer">Denodo</p>
+
+          <h3 class="cert-card__name">
+            Denodo Platform 8.0 Certified Administrator Associate
+          </h3>
+
+          <p class="cert-card__year">Active</p>
+        </div>
+
+      </div>
+
+      <div class="cert-card__actions">
+
+        <a class="cert-card__view-btn active"
+           href="images/denodo_admin.png"
+           target="_blank">
+
+          <svg viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2">
+
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+
+          </svg>
+
+          View
+        </a>
+
+      </div>
+
+    </article>
+
+    <!-- Denodo Developer -->
+    <article class="cert-card visible">
+
+      <div class="cert-card__header">
+
+        <div class="cert-card__badge cert-card__badge--photo">
+          <img src="images/denodo_technologies_logo.jpg" alt="Denodo Developer">
+        </div>
+
+        <div>
+          <p class="cert-card__issuer">Denodo</p>
+
+          <h3 class="cert-card__name">
+            Denodo Platform 8.0 Certified Developer Associate
+          </h3>
+
+          <p class="cert-card__year">Active</p>
+        </div>
+
+      </div>
+
+      <div class="cert-card__actions">
+
+        <a class="cert-card__view-btn active"
+           href="images/denodo_dev.png"
+           target="_blank">
+
+          <svg viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2">
+
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+
+          </svg>
+
+          View
+        </a>
+
+      </div>
+
+    </article>
+
+    <!-- Denodo Architect -->
+    <article class="cert-card visible">
+
+      <div class="cert-card__header">
+
+        <div class="cert-card__badge cert-card__badge--photo">
+          <img src="images/denodo_technologies_logo.jpg" alt="Denodo Architect">
+        </div>
+
+        <div>
+          <p class="cert-card__issuer">Denodo</p>
+
+          <h3 class="cert-card__name">
+            Denodo Platform 8.0 Certified Architect Associate
+          </h3>
+
+          <p class="cert-card__year">Active</p>
+        </div>
+
+      </div>
+
+      <div class="cert-card__actions">
+
+        <a class="cert-card__view-btn active"
+           href="images/denodo_Arch.png"
+           target="_blank">
+
+          <svg viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2">
+
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+
+          </svg>
+
+          View
+        </a>
+
+      </div>
+
+    </article>
+
+    <!-- Demo Ready -->
+    <article class="cert-card visible">
+
+      <div class="cert-card__header">
+
+        <div class="cert-card__badge cert-card__badge--photo">
+          <img src="images/denodo_technologies_logo.jpg" alt="Demo Ready">
+        </div>
+
+        <div>
+          <p class="cert-card__issuer">Denodo</p>
+
+          <h3 class="cert-card__name">
+            Denodo Platform Demo Ready Partner
+          </h3>
+
+          <p class="cert-card__year">Active</p>
+        </div>
+
+      </div>
+
+      <div class="cert-card__actions">
+
+        <a class="cert-card__view-btn active"
+           href="images/denodo_demo.png"
+           target="_blank">
+
+          <svg viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2">
+
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+
+          </svg>
+
+          View
+        </a>
+
+      </div>
+
+    </article>
+
+
+    <!-- AIRFLOW -->
+    <article class="cert-card visible">
+
+      <div class="cert-card__header">
+
+        <div class="cert-card__badge cert-card__badge--photo">
+          <img src="images/astronomer.png" alt="Demo Ready">
+        </div>
+
+        <div>
+          <p class="cert-card__issuer">Astronomer</p>
+
+          <h3 class="cert-card__name">
+            Astronomer Certification for Apache Airflow 3 Fundamentals
+          </h3>
+
+          <p class="cert-card__year">Active</p>
+        </div>
+
+      </div>
+
+      <div class="cert-card__actions">
+
+        <a class="cert-card__view-btn active"
+           href="images/airflow_cer.png"
+           target="_blank">
+
+          <svg viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2">
+
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+
+          </svg>
+
+          View
+        </a>
+
+      </div>
+
+    </article>
+    <!-- Udacity -->
+    <article class="cert-card visible">
+
+      <div class="cert-card__header">
+
+        <div class="cert-card__badge cert-card__badge--photo">
+          <img src="images/udacity.png" alt="Demo Ready">
+        </div>
+
+        <div>
+          <p class="cert-card__issuer">Udacity / egFWD</p>
+
+          <h3 class="cert-card__name">
+            Data Analysis Nanodegree – Professional & Advanced
+          </h3>
+
+          <p class="cert-card__year">Active</p>
+        </div>
+
+      </div>
+
+      <div class="cert-card__actions">
+
+        <a class="cert-card__view-btn active"
+           href="images/Advanced-1.jpg"
+           target="_blank">
+
+          <svg viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2">
+
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+
+          </svg>
+
+          View
+        </a>
+
+        <a class="cert-card__view-btn active"
+           href="images/professional.jpg"
+           target="_blank">
+
+          <svg viewBox="0 0 24 24"
+               fill="none"
+               stroke="currentColor"
+               stroke-width="2">
+
+            <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+            <circle cx="12" cy="12" r="3"></circle>
+
+          </svg>
+
+          View
+        </a>
+      </div>
+
+    </article>    
+    
+  </div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <span class="section-tag">Let's connect</span>
+  <h2 class="section-title">Get in <span>Touch</span></h2>
+  <div class="contact-grid">
+    <a href="mailto:AhmedGamalAboelkasem72@gmail.com" class="contact-item reveal visible" data-delay="0">
+      <span class="contact-item__icon">✉️</span>
+      <div><p class="contact-item__label">Email</p><p class="contact-item__value">AhmedGamalAboelkasem72@gmail.com</p></div>
+    </a>
+    <a href="tel:+201157452001" class="contact-item reveal visible" data-delay="50">
+      <span class="contact-item__icon">📞</span>
+      <div><p class="contact-item__label">Phone — Egypt</p><p class="contact-item__value">+20 115 745 2001</p></div>
+    </a>
+    <a href="tel:+966580075871" class="contact-item reveal visible" data-delay="100">
+      <span class="contact-item__icon">📱</span>
+      <div><p class="contact-item__label">Phone — Saudi Arabia</p><p class="contact-item__value">+966 580 075 871</p></div>
+    </a>
+    <a href="https://www.linkedin.com/in/ahmed-gamal-aboelkasem/" target="_blank" rel="noopener" class="contact-item reveal visible" data-delay="150">
+      <span class="contact-item__icon">💼</span>
+      <div><p class="contact-item__label">LinkedIn</p><p class="contact-item__value">ahmed-gamal-aboelkasem</p></div>
+    </a>
+    <div class="contact-item reveal visible" data-delay="200">
+      <span class="contact-item__icon">📍</span>
+      <div><p class="contact-item__label">Location</p><p class="contact-item__value">Riyadh, Saudi Arabia</p></div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <p>© 2025 Ahmed Gamal AboElkasem &nbsp;·&nbsp; Data &amp; Analytics Engineer</p>
+</footer>
+
+<!-- Modals -->
+<div class="modal-overlay" id="certModal" onclick="closeOnOverlay(event,&#39;certModal&#39;)">
+  <div class="modal"><button class="modal__close" onclick="document.getElementById(&#39;certModal&#39;).classList.remove(&#39;active&#39;)">✕</button><img id="certModalImg" src="file:///D:/DATA/CV/Portfolio/Ahmed Gamal – Data & Analytics Engineer.html" alt="Certificate"></div>
+</div>
+<div class="modal-overlay" id="badgeModal" onclick="closeOnOverlay(event,&#39;badgeModal&#39;)">
+  <div class="modal"><button class="modal__close" onclick="document.getElementById(&#39;badgeModal&#39;).classList.remove(&#39;active&#39;)">✕</button><img id="badgeModalImg" src="file:///D:/DATA/CV/Portfolio/Ahmed Gamal – Data & Analytics Engineer.html" alt="Badge" style="max-width:320px;max-height:320px;"></div>
+</div>
+
+<script>
+/* === nav.js === */
+(function(){
+  const nav=document.querySelector('.nav');
+  const links=document.querySelectorAll('.nav__links a');
+  const hamburger=document.querySelector('.nav__hamburger');
+  const drawer=document.querySelector('.nav__drawer');
+  const sections=document.querySelectorAll('section[id]');
+  function onScroll(){
+    nav.classList.toggle('scrolled',window.scrollY>20);
+    let cur='';
+    sections.forEach(s=>{if(window.scrollY>=s.offsetTop-90)cur=s.id;});
+    links.forEach(a=>a.classList.toggle('active',a.getAttribute('href')==='#'+cur));
+  }
+  if(hamburger&&drawer){
+    hamburger.addEventListener('click',()=>drawer.classList.toggle('open'));
+    drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>drawer.classList.remove('open')));
+  }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  onScroll();
+})();
+
+/* === animations.js === */
+(function(){
+  const obs=new IntersectionObserver((entries)=>{
+    entries.forEach(e=>{
+      if(!e.isIntersecting)return;
+      const d=parseInt(e.target.dataset.delay||0,10);
+      setTimeout(()=>e.target.classList.add('visible'),d);
+      obs.unobserve(e.target);
+    });
+  },{threshold:0.12});
+  document.querySelectorAll('.reveal').forEach((el,i)=>{el.dataset.delay=el.dataset.delay||(i*60);obs.observe(el);});
+  document.querySelectorAll('.reveal-left').forEach((el,i)=>{el.dataset.delay=el.dataset.delay||(i*80);obs.observe(el);});
+  document.querySelectorAll('.exp-item').forEach((el,i)=>{el.dataset.delay=i*130;obs.observe(el);});
+  document.querySelectorAll('.cert-card').forEach((el,i)=>{el.dataset.delay=i*75;obs.observe(el);});
+  document.querySelectorAll('.skill-category').forEach((el,i)=>{el.dataset.delay=i*60;obs.observe(el);});
+  document.querySelectorAll('.contact-item').forEach((el,i)=>{el.dataset.delay=i*50;obs.observe(el);});
+  const edu=document.querySelector('.edu-card');
+  if(edu)obs.observe(edu);
+})();
+
+/* === certs.js === */
+const certStore={};
+function attachCert(id,input){
+  const file=input.files[0];if(!file)return;
+  const url=URL.createObjectURL(file);
+  certStore[id]={url,type:file.type};
+  const v=document.getElementById('view-'+id);if(v)v.classList.add('active');
+  const l=document.getElementById('label-'+id);if(l)l.classList.add('active');
+  const btn=input.previousElementSibling;
+  if(btn)btn.innerHTML='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" style="width:13px;height:13px"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg> Replace';
+}
+function viewCert(id,e){
+  if(e)e.preventDefault();
+  const c=certStore[id];if(!c)return;
+  if(c.type==='application/pdf'){window.open(c.url,'_blank');return;}
+  document.getElementById('certModalImg').src=c.url;
+  document.getElementById('certModal').classList.add('active');
+}
+function openBadge(e){
+  const box=e.currentTarget;const img=box.querySelector('img');
+  if(!img||!img.src)return;
+  document.getElementById('badgeModalImg').src=img.src;
+  document.getElementById('badgeModal').classList.add('active');
+}
+function closeOnOverlay(e,id){
+  if(e.target===e.currentTarget)document.getElementById(id).classList.remove('active');
+}
+document.addEventListener('keydown',e=>{
+  if(e.key==='Escape')document.querySelectorAll('.modal-overlay.active').forEach(m=>m.classList.remove('active'));
+});
+</script>
+
+</body></html>
